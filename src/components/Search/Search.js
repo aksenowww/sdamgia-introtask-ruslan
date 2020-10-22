@@ -33,7 +33,6 @@ const Search = () => {
     },
     [value, result]
   )
-
   return (
     <div>
       <form onSubmit={handleClick}>
@@ -44,9 +43,9 @@ const Search = () => {
           onChange={handleChange}
         />
         <button onClick={handleClick}>Поиск</button>
-      </form>
+      </form >
       {result && <div>{result.url}</div>}
-    </div>
+    </div >
   )
 }
 
